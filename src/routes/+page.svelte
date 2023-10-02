@@ -130,6 +130,12 @@ const handleReset = () => {
         </button>
     </div>
 
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content
+    absolute bottom-0">
+        <aside>
+          <p>A Piece of The Synapse Project 2023</p>
+        </aside>
+      </footer>
 </main>
 
 <style lang="postcss">
