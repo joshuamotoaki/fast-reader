@@ -1,5 +1,4 @@
 <script lang="ts">
-
 let currentWord: string = "";   // Current word being displayed
 let textSpeed: number = 250;    // Speed of text in words per minute
 let isActive: boolean = false;  // Whether the text stream is active
@@ -13,7 +12,8 @@ let index = 0;                  // Index of current word in text array
  * Starts the text stream
  */
 const handleGo = () => {
-    textArray = textInput.split(" ");
+    // Split the text input into an array of words (by spaces or newlines)
+    textArray = textInput.split(/[\s\n]+/);
     index = 0;
     isActive = true;
     startTextStream();
@@ -70,7 +70,7 @@ const handleReset = () => {
 <main class="h-screen w-screen">
     <div class="navbar bg-base-300">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl" href="/">Fast Reader</a>
+          <a class="btn btn-ghost normal-case text-xl" href="/">Quick Read</a>
         </div>
         <div class="flex-none">
           <ul class="menu menu-horizontal px-1">
