@@ -98,13 +98,13 @@ const handleReset = () => {
     </div>
 
     <div class="w-fit mx-auto mt-12">
-        <h2 class="text-lg mb-1">Enter Text Here</h2>
-        <textarea class="textarea textarea-primary w-[600px] max-w-screen"
+        <textarea class="textarea textarea-bordered w-[600px] max-w-screen
+        h-40"
         bind:value={textInput}
         placeholder="Enter Text" />
     </div>
 
-    <div class="mt-12 w-[600px] max-w-screen mx-auto space-x-2">
+    <div class="mt2 w-[600px] max-w-screen mx-auto space-x-2">
         <input type="number" placeholder="Speed" step="50" min="50" max="1000"
         class="input input-bordered max-w-xs" 
         bind:value={textSpeed}/>
