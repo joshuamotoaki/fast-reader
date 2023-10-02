@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { base } from "$app/paths";
 
 let currentWord: string = "";   // Current word being displayed
 let textSpeed: number = 250;    // Speed of text in words per minute
@@ -71,7 +70,7 @@ const handleReset = () => {
 <main class="h-screen w-screen">
     <div class="navbar bg-base-300">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl" href={base}>Fast Reader</a>
+          <a class="btn btn-ghost normal-case text-xl" href="/">Fast Reader</a>
         </div>
         <div class="flex-none">
           <ul class="menu menu-horizontal px-1">
